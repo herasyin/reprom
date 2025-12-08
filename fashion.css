@@ -20,6 +20,8 @@ body {
     background: white;
     color: #363335;
 }
+a { color:#c41e3a; font-weight:400; text-decoration:none; }
+a:hover { text-decoration: underline; }
 .container {
     width:90vw;
     margin:0 auto;
@@ -202,8 +204,8 @@ body {
     gap:30px;
 }
 .footer-left p { font-size:13pt font-weight:400; }
-.footer-left a { color:#c41e3a; font-weight:900; text-decoration:none; }
-.footer-right img { height:16vh; border-radius:15px; }
+.footer-right img { height:16vh; border-radius:15px; transition: scale 0.2s;}
+.footer-right img:hover {scale: 1.03;}
 .cube {
   margin: 50px auto 0;
   position: relative;
