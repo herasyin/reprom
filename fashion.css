@@ -22,6 +22,15 @@ body {
 }
 a { color:#c41e3a; font-weight:400; text-decoration:none; }
 a:hover { text-decoration: underline; }
+
+a[x-apple-data-detectors] {
+    color: inherit;
+    text-decoration: none;
+    pointer-events: none;
+    cursor: text;
+    font-family: JetBrainsMono, monospace;
+}
+
 .container {
     width:90vw;
     margin:0 auto;
@@ -172,7 +181,7 @@ a:hover { text-decoration: underline; }
     z-index:10000;
     border-radius:50%;
     transform:scale(.77);
-    opacity: 0;
+    opacity: .5;
     transition:all .2s ease;
 }
 .fullscreen:hover::after {
@@ -276,6 +285,9 @@ a:hover { text-decoration: underline; }
     .card-text p { font-size:1.1vw; }
 }
 @media (max-width:768px) {
+    .fullscreen .info strong { font-size:4.2vw; }
+    .fullscreen .info p { font-size:3.1vw; }
+    .fullscreen {height: 80vh; width: 80wv;}
     .container {width:80vw;}
     .card-wrapper { width:100%; height:30vw; }
     .card-text { width:70%; padding:5vw 5vw; }
