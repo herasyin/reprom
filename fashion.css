@@ -17,7 +17,7 @@
 * { margin:0; padding:0; box-sizing:border-box; }
 body {
     font-family: 'SF Pro Display', sans-serif;
-    background: white;
+    background: #ebebeb;
     color: #363335;
 }
 a { color:#c41e3a; font-weight:400; text-decoration:none; }
@@ -73,14 +73,17 @@ a[x-apple-data-detectors] {
 .products {
     display:flex;
     flex-wrap:wrap;
-    gap:2vw;
+    gap: .66vw;
     margin-bottom:12vh;
 }
 .card-wrapper {
-    width:44vw;
-    height:15vw;
-    background: #f8f8f8;
-    border-radius:10px;
+    width:22vw;
+    max-height: 450px;
+    min-height: 380px;
+    height: 27vw;
+    background: #ebebeb;
+    border-radius:0px;
+    border: 2px white dashed;
     overflow:hidden;
     position:relative;
     transition:transform .2s ease;
@@ -96,35 +99,32 @@ a[x-apple-data-detectors] {
     transform:translateY(-5px);
 }
 .card-img {
-    position:absolute;
-    top:0;
-    right:0;
-    height:100%;
-    width:auto;
+    width:100%;
     object-fit:cover;
     object-position:right center;
     filter: brightness(1.02);
     mix-blend-mode: multiply;
 }
 .card-text {
-    position:relative;
     z-index:2;
-    width:65%;
-    height:100%;
-    padding:2.5vw 2vw;
+    width:100%;
+    padding: 0px 2vw;
     display:flex;
     flex-direction:column;
     justify-content:center;
     /*background:linear-gradient(to right, rgba(255,255,255,0.7) 60%, rgba(255,255,255,0));*/
 }
 .card-text h3 {
-    font-size:1.3vw;
+    padding-top: 20px;
+    border-top: 2px white dashed;
+    text-transform: uppercase;
+    font-size:14px;
     font-weight:900;
-    margin-bottom:1vh;
+    margin-bottom: 5px;
 }
 .card-text p {
     font-family: 'JetBrainsMono', sans-serif;
-    font-size:.8vw;
+    font-size: 12px;
     color:#333;
 }
 .fullscreen {
@@ -214,40 +214,9 @@ a[x-apple-data-detectors] {
     gap:30px;
 }
 .footer-left p { font-size:10pt; font-weight:400; }
-.footer-right img { height:35px; padding-left: 5px; transition: scale 0.2s;}
-.footer-right img:hover {scale: 1.20;}
-.cube {
-  margin: 50px auto 0;
-  position: relative;
-  width: 50px;
-  height: 50px;
-  transform-style: preserve-3d;
-  animation: rotate 60s infinite linear;
-}
-.over-cube { display: none; margin-top: -116px; }
-.face {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border: 1px #f9f9f9 solid;
-  box-shadow: inset 0 0 20px #fafafa;
-}
-.cube:hover + .over-cube{ display: none; }
-.cube:hover {
-    background-image: url(re.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    .face {
-        border: 1px #ddd solid;
-        box-shadow: inset 0 0 20px #fafafa;
-    }
-}
-.face:nth-child(1) { transform: translateZ(25px); }
-.face:nth-child(2) { transform: rotateY(180deg) translateZ(25px); } 
-.face:nth-child(3) { transform: rotateY(90deg) translateZ(25px); } 
-.face:nth-child(4) { transform: rotateY(-90deg) translateZ(25px); } 
-.face:nth-child(5) { transform: rotateX(90deg) translateZ(25px); } 
-.face:nth-child(6) { transform: rotateX(-90deg) translateZ(25px); }
+.footer-right img { opacity: 0.6; height:35px; padding-left: 5px; transition: scale 0.1s; filter: grayscale(1) brightness(2);}
+.footer-right img:hover {opacity: 1; scale: 1.10;filter: grayscale(0) brightness(1);}
+
 #noise-canvas {
     position: fixed;
     top: 0; left: 0;
@@ -281,27 +250,35 @@ a[x-apple-data-detectors] {
 }
 @media (max-width:1300px) {
     #noise-canvas {display: none!important;}
-    .card-text h3 { font-size:2.1vw; }
-    .card-text p { font-size:1.1vw; }
+    .card-wrapper {
+        width: 29vw;
+        max-height: 410px;
+        min-height: 360px;
+        height:38vw;
+    }
+}
+@media (max-width: 880px) {
+    .card-wrapper { 
+        width: 44vw;
+        max-height: 420px;
+        min-height: 350px;
+        height:60vw;
+    }
 }
 @media (max-width:768px) {
     .fullscreen .info strong { font-size:4.2vw; }
     .fullscreen .info p { font-size:3.1vw; }
     .fullscreen {height: 80vh; width: 80wv;}
-    .container {width:80vw;}
-    .card-wrapper { width:100%; height:30vw; }
-    .card-text { width:70%; padding:5vw 5vw; }
-    .card-text h3 { font-size:3.2vw; }
-    .card-text p { font-size:2.1vw; }
     .header-left{width:100%;}
     .header-left p {margin-top:2vh;}
     .header-right {width:100%;text-align:left;margin-top:2vh;}
     .fullscreen::after {width:8vh;height:8vh;top:2vh;right:2vh;}
 }
-@media (max-width:450px) {
-    .card-text p { font-size:2.5vw; }
-}
-
-@media (max-width: 360px) {
-    .header-left h1 {font-size: 40pt;}
+@media (max-width:560px) {
+    .card-wrapper {
+        width: 88vw;
+        max-height: 560px;
+        min-height: 370px;
+        height:95vw;
+    }
 }
