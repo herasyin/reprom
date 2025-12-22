@@ -273,6 +273,7 @@ a[x-apple-data-detectors] {
     .header-left p {margin-top:2vh;}
     .header-right {width:100%;text-align:left;margin-top:2vh;}
     .fullscreen::after {width:8vh;height:8vh;top:2vh;right:2vh;}
+    .products {gap: 1.5vw;}
 }
 @media (max-width:560px) {
     .card-wrapper {
