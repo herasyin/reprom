@@ -225,6 +225,37 @@ a[x-apple-data-detectors] {
 .header-right img { opacity: 0.62; height:25px; margin-top: 11px; padding-left: 5px; transition: scale 0.1s; filter: grayscale(1) brightness(0);}
 .header-right img:hover {opacity: 1; scale: 1.10;filter: grayscale(0) brightness(1);}
 
+.filter-buttons {
+    text-align: left;
+    margin: 30px 0;
+}
+
+.filter-btn {
+    background: #ebebeb;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin-right: 8px;
+    border: 2px dashed #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filter-btn.active {
+    background: #0066cc;
+    color: white;
+    border-color: #0066cc;
+}
+
+.filter-btn:hover {
+    background: #FFF;
+}
+
+.filter-btn.active:hover {
+    background: #0055aa;
+}
+
 #noise-canvas {
     position: fixed;
     top: 0; left: 0;
