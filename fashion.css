@@ -237,6 +237,7 @@ a[x-apple-data-detectors] {
     font-size: 15px;
     padding: 10px 20px;
     margin-right: 8px;
+    margin-top: 8px;
     border: 2px dashed #fff;
     cursor: pointer;
     transition: all 0.3s;
