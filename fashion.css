@@ -64,11 +64,17 @@ a[x-apple-data-detectors] {
 }
 .liner {
     width: 95vw;
-    background: #363335;
     height: 20px;
-    margin-left:-2.5vw;
+    margin-left: -2.5vw;
     margin-bottom: 5vh;
     overflow: hidden;
+    font-family: 'JetBrainsMono', monospace;
+    font-size: 18px;
+    line-height: 1;
+    white-space: nowrap;
+
+    font-variant-ligatures: common-ligatures contextual;
+    font-feature-settings: "liga" 1, "calt" 1;
 }
 .products {
     display:flex;

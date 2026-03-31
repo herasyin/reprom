@@ -39,7 +39,6 @@
 <body>
 
 <div class="container">
-    <!-- вся твоя разметка без изменений -->
     <div class="header">
         <div class="header-left">
             <h1>re:prom</h1>
@@ -55,17 +54,18 @@
             <p>---</p>
         </div>
     </div>
-    <div class="liner"></div>
+   <div class="liner">-></div>
     <div class="filter-buttons">
         <button class="filter-btn active" data-filter="all">Все</button>
         <button class="filter-btn" data-filter="variovac">Variovac</button>
         <button class="filter-btn" data-filter="dick">Dick</button>
         <button class="filter-btn" data-filter="supervac">SuperVac</button>
+        <button class="filter-btn" data-filter="vemag">Vemag</button>
         <button class="filter-btn" data-filter="other">Разное</button>
     </div>
     <div class="products">
         <div class="card-wrapper variovac" data-brand="variovac">
-            <div class="card" title="нажми для увеличения" onclick="openFull(this)">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
                 <img src="photos/prostavka-napravlyayushchih-variovac-a1014768.jpg" class="card-img" alt="Проставка для&nbsp;направляющие дисковых ножей Variovac 0152_0800_006 200_08_00174">
                 <div class="card-text">
                     <h3>Проставка направляющих</h3>
@@ -75,7 +75,7 @@
             </div>
         </div>
         <div class="card-wrapper variovac" data-brand="variovac">
-            <div class="card" title="нажми для увеличения" onclick="openFull(this)">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
                 <img src="photos/napravlyayushchie-diskovyh-nozhey-variovac-komplekt-a1014764.jpg" class="card-img" alt="Направляющие дисковых ножей Variovac 0152_0800_005 0152_0800_007 200_08_00144 200_08_00154 200_38_0075_3 А1014764 А1053706 А1053707">
                 <div class="card-text">
                     <h3>Направляющие дисковых ножей</h3>
@@ -85,7 +85,7 @@
             </div>
         </div>
         <div class="card-wrapper dick" data-brand="dick">
-            <div class="card" title="нажми для увеличения" onclick="openFull(this)">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
                 <img src="photos/kamen-zatochnoy-dick-sm111-200x40x20-982090029.jpg" class="card-img" alt="Камень заточной 200х40х20 Dick SM111 982090029 9815001">
                 <div class="card-text">
                     <h3>Камень заточной</h3>
@@ -95,7 +95,7 @@
             </div>
         </div>
         <div class="card-wrapper dick" data-brand="dick">
-            <div class="card" title="нажми для увеличения" onclick="openFull(this)">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
                 <img src="photos/disk-dovodochnyy-dick-sm111-75x20-982090251.jpg" class="card-img" alt="Диск доводочный 75х20 9х6 Dick SM111 982090251 980100">
                 <div class="card-text">
                     <h3>Диск доводочный</h3>
@@ -105,7 +105,7 @@
             </div>
         </div>
         <div class="card-wrapper variovac" data-brand="variovac">
-            <div class="card" title="нажми для увеличения" onclick="openFull(this)">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
                 <img src="photos/perforiruyushchiy-ovalnyy-nozh-variovac-a1022266.jpg" class="card-img" alt="Перфорирующий овальный нож Variovac A1022266 225 T2 0010 M5x10">
                 <div class="card-text">
                     <h3>Перфорирующий овальный нож</h3>
@@ -115,7 +115,7 @@
             </div>
         </div>
         <div class="card-wrapper dick" data-brand="dick">
-            <div class="card" title="нажми для увеличения" onclick="openFull(this)">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
                 <img src="photos/krug-polirovalnyy-dick-sm111-150x20x26-982190320.jpg" class="card-img" alt="Круг полировальный Dick SM111 150х20х26 982190320 98160010">
                 <div class="card-text">
                     <h3>Круг полировальный</h3>
@@ -125,7 +125,7 @@
             </div>
         </div>
         <div class="card-wrapper dick" data-brand="dick">
-            <div class="card" title="нажми для увеличения" onclick="openFull(this)">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
                 <img src="photos/polirovalnaya-shchetka-dick-knecht-200x50x17-94601180.jpg" class="card-img" alt="Полировальная щетка Dick Knecht 200х50х17 94601180 30002008150">
                 <div class="card-text">
                     <h3>Полировальная щетка</h3>
@@ -135,7 +135,7 @@
             </div>
         </div>
         <div class="card-wrapper variovac" data-brand="variovac">
-            <div class="card" title="нажми для увеличения" onclick="openFull(this)">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
                 <img src="photos/nozh-zubchatyy-poperechnyy-variovac-1x24x385-5310321014.jpg" class="card-img" alt="Поперечный зубчатый нож Variovac 1x24x385 5310321014 A1054362">
                 <div class="card-text">
                     <h3>Поперечный зубчатый нож</h3>
@@ -144,9 +144,8 @@
                 
             </div>
         </div>
-        <!-- остальные карточки точно так же -->
         <div class="card-wrapper variovac" data-brand="variovac">
-            <div class="card" title="нажми для увеличения" onclick="openFull(this)">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
                 <img src="photos/nozh-624-poperechnaya-rezka-variovac-a1040710.jpg" class="card-img" alt="Нож 624, поперечная резка Variovac A1040710 550А30022 550 A3 0022">
                 <div class="card-text">
                     <h3>Нож 624, поперечная&nbsp;резка</h3>
@@ -156,7 +155,7 @@
             </div>
         </div>
         <div class="card-wrapper supervac" data-brand="supervac">
-            <div class="card" title="нажми для увеличения" onclick="openFull(this)">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
                 <img src="photos/nozh-otreznoi-zubchatyy-supervac-gk501-e0095200203.jpg" class="card-img" alt="Нож отрезной зубчатый SuperVac GK501 1016 E0095200203">
                 <div class="card-text">
                     <h3>Нож отрезной зубчатый</h3>
@@ -166,7 +165,7 @@
             </div>
         </div>
         <div class="card-wrapper variovac" data-brand="variovac">
-            <div class="card" title="нажми для увеличения" onclick="openFull(this)">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
                 <img src="photos/nozh-diskovyy-variovac-90mm-a1040643.jpg" class="card-img" alt="Нож круглый дисковый Variovac 90 A1040643 550A10025 550 A1 0025">
                 <div class="card-text">
                     <h3>Нож дисковый, продольная резка</h3>
@@ -176,7 +175,7 @@
             </div>
         </div>
         <div class="card-wrapper variovac" data-brand="variovac">
-            <div class="card" title="нажми для увеличения" onclick="openFull(this)">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
                 <img src="photos/nozh-zubchatyy-poperechnyy-variovac-1x40x385-a1071901.jpg" class="card-img" alt="Поперечный зубчатый нож Variovac 1x40x385 1x24x385 A1071901">
                 <div class="card-text">
                     <h3>Поперечный зубчатый нож</h3>
@@ -186,7 +185,7 @@
             </div>
         </div>
         <div class="card-wrapper variovac" data-brand="variovac">
-            <div class="card" title="нажми для увеличения" onclick="openFull(this)">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
                 <img src="photos/napravlyayushchaya-srednyaya-diskovyh-nozhey-variovac-a1053706.jpg" class="card-img" alt="Направляющая дисковых ножей, средняя Variovac А1053706 А1015919 200_38_0075_3 0152_0800_012">
                 <div class="card-text">
                     <h3>Направляющая дисковых ножей</h3>
@@ -195,9 +194,8 @@
                 
             </div>
         </div>
-        <!-- остальные карточки точно так же -->
         <div class="card-wrapper variovac" data-brand="variovac">
-            <div class="card" title="нажми для увеличения" onclick="openFull(this)">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
                 <img src="photos/zazhim-plenki-variovac-a1024243.jpg" class="card-img" alt="Зажим пленки Variovac 260T20013 A1024201">
                 <div class="card-text">
                     <h3>Зажим пленки</h3>
@@ -207,7 +205,7 @@
             </div>
         </div>
         <div class="card-wrapper other" data-brand="other">
-            <div class="card" title="нажми для увеличения" onclick="openFull(this)">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
                 <img src="photos/vozdushnyy-filtr-s75-tga-8035.jpg" class="card-img" alt="Подшипники Vemag">
                 <div class="card-text">
                     <h3>Воздушный фильтр С75</h3>
@@ -217,13 +215,169 @@
             </div>
         </div>
         <div class="card-wrapper supervac" data-brand="supervac">
-            <div class="card" title="нажми для увеличения" onclick="openFull(this)">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
                 <img src="photos/parouderzhivayushchiy-sharik-50mm-supervac.jpg" class="card-img" alt="Пароудерживающий шарик изолирующий шарик для&nbsp;термоусадочных танков 50">
                 <div class="card-text">
                     <h3>Пароудерживающий шарик</h3>
                     <p>для&nbsp;термоусадочных cтанков <b>SuperVac</b><br>Ø50мм</p>
+                </div>    
+            </div>
+        </div>
+
+        <!-- 1 -->
+        <div class="card-wrapper variovac" data-brand="variovac">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
+                <img src="photos/uplotnenie-stancii-zapechatyvaniya-variovac-420x300-format-3-1.jpg" class="card-img" 
+                     alt="Уплотнение станции запечатывания Variovac 420х300мм формат 3.1">
+                <div class="card-text">
+                    <h3>Уплотнение станции запечатывания</h3>
+                    <p>для&nbsp;упаковочной машины <b>Variovac</b><br>420×300мм, формат 3.1</p>
                 </div>
-                
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="card-wrapper variovac" data-brand="variovac">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
+                <img src="photos/uplotnenie-stancii-zapechatyvaniya-variovac-420x300-format-2-2.jpg" class="card-img" 
+                     alt="Уплотнение станции запечатывания Variovac 420х300мм формат 2.2">
+                <div class="card-text">
+                    <h3>Уплотнение станции запечатывания</h3>
+                    <p>для&nbsp;упаковочной машины <b>Variovac</b><br>420×300мм, формат 2.2</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="card-wrapper variovac" data-brand="variovac">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
+                <img src="photos/uplotnenie-universalnoe-variovac-420x300.jpg" class="card-img" 
+                     alt="Универсальное уплотнение станции запечатывания Variovac 420х300мм">
+                <div class="card-text">
+                    <h3>Универсальное уплотнение</h3>
+                    <p>для&nbsp;упаковочной машины <b>Variovac</b><br>420×300мм, форматы 2.1, 2.2, 3.2, 5.2<br>
+                    артикулы: A1022991 / A1022992 / A1023046 / A1023054</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="card-wrapper other" data-brand="other">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
+                <img src="photos/nozh-dlya-shkurosyomnoj-mashiny-astor-434x20x1.jpg" class="card-img" 
+                     alt="Нож для&nbsp;шкуросъемной машины Astor 434х20х1.0">
+                <div class="card-text">
+                    <h3>Нож</h3>
+                    <p>для&nbsp;шкуросъёмной машины <b>Astor</b>, Германия<br>434×20×1,0мм</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="card-wrapper variovac" data-brand="variovac">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
+                <img src="photos/vtulka-skolzheniya-variovac-a1039701.jpg" class="card-img" 
+                     alt="Втулка скольжения Variovac аналог A1039701">
+                <div class="card-text">
+                    <h3>Втулка скольжения</h3>
+                    <p>для упаковочной машины <b>Variovac</b><br>артикул: A1039701 <sup>аналог</sup></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="card-wrapper vemag" data-brand="vemag">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
+                <img src="photos/knopka-zelenaya-vemag-071099174.jpg" class="card-img" 
+                     alt="Кнопка зеленая Vemag 071099174 071099133">
+                <div class="card-text">
+                    <h3>Кнопка зелёная</h3>
+                    <p>для&nbsp;машины <b>Vemag</b><br>артикулы: 071099174 / 071099133</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="card-wrapper vemag" data-brand="vemag">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
+                <img src="photos/knopka-zelenaya-strelka-vemag-071099121.jpg" class="card-img" 
+                     alt="Кнопка зеленая стрелка Vemag 071099121">
+                <div class="card-text">
+                    <h3>Кнопка зелёная «стрелка»</h3>
+                    <p>для&nbsp;машины <b>Vemag</b><br>артикул: 071099121</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="card-wrapper vemag" data-brand="vemag">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
+                <img src="photos/kontaktnyy-element-vemag-071099127.jpg" class="card-img" 
+                     alt="Контактный элемент Vemag 071099127 071099128 071099130">
+                <div class="card-text">
+                    <h3>Контактный элемент</h3>
+                    <p>для&nbsp;машины <b>Vemag</b><br>артикулы: 071099127 / 071099128 / 071099130</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="card-wrapper dick" data-brand="dick">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
+                <img src="photos/ploskij-remen-240x18x1-8-sm-110-111.jpg" class="card-img" 
+                     alt="Плоский ремень 240х18х1.8 для&nbsp;Dick SM-110/111">
+                <div class="card-text">
+                    <h3>Плоский ремень</h3>
+                    <p>для&nbsp;заточного станка <b>DICK&nbsp;SM-110/111</b><br>240×18×1,8мм</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="card-wrapper variovac" data-brand="variovac">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
+                <img src="photos/noz-zvezda-18x18x23-8-variovac-a1040739.jpg" class="card-img" 
+                     alt="Нож звезда 18x18x23.8 Variovac аналог A1040739">
+                <div class="card-text">
+                    <h3>Нож «звезда»</h3>
+                    <p>для упаковочной машины <b>Variovac / Ulma / Multivac</b><br>18×18×23,8мм (R=8mm)<br>артикулы: A1040739 <sup>аналог</sup></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="card-wrapper variovac" data-brand="variovac">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
+                <img src="photos/noz-poluzvezda-14x18x23-8-variovac-a1040737.jpg" class="card-img" 
+                     alt="Нож полузвезда 14x18x23.8 Variovac аналог A1040737">
+                <div class="card-text">
+                    <h3>Нож «полузвезда»</h3>
+                    <p>для упаковочной машины <b>Variovac / Ulma / Multivac</b><br>14×18×23,8мм (R=8mm)<br>артикулы: A1040737 <sup>аналог</sup></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="card-wrapper variovac" data-brand="variovac">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
+                <img src="photos/noz-evrootverstie-variovac-a1040766.jpg" class="card-img" 
+                     alt="Нож евроотверстие Variovac аналог A1040766">
+                <div class="card-text">
+                    <h3>Нож «евроотверстие»</h3>
+                    <p>для упаковочной машины <b>Variovac / Ulma / Multivac</b><br>артикулы: A1040766 <sup>аналог</sup></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="card-wrapper other" data-brand="other">
+            <div class="card" title="нажми для&nbsp;увеличения" onclick="openFull(this)">
+                <img src="photos/rassekatel-elochka-d36-d48mm.jpg" class="card-img" 
+                     alt="Рассекатель елочка в цевку D36мм D48мм">
+                <div class="card-text">
+                    <h3>Рассекатель «ёлочка»</h3>
+                    <p>в цевку Ø36мм / Ø48мм</p>
+                </div>
             </div>
         </div>
     </div>
@@ -302,6 +456,355 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "Проставка направляющих для упаковочной машины Variovac",
+      "description": "Проставка для направляющих дисковых ножей Variovac.",
+      "sku": "А1014768",
+      "mpn": "А1014768",
+      "image": "https://your-site.ru/photos/Prostavka_dlya_napravlyayushchie_diskovikh_nozhei_Variovac_0152-0800-006_200-08-00174.jpg",
+      "brand": { "@type": "Brand", "name": "Variovac" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "А1053705" },
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "0152-0800-006" },
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "200-08-00174" }
+      ]
+    },
+    {
+      "@type": "Product",
+      "name": "Направляющие дисковых ножей (комплект левая + правая) для Variovac",
+      "description": "Комплект направляющих дисковых ножей (левая + правая) для упаковочной машины Variovac.",
+      "sku": "А1014764",
+      "mpn": "А1014764",
+      "image": "https://your-site.ru/photos/Napravlyayushchie_diskovikh_nozhei_Variovac_0152-0800-005_0152-0800-007_200-08-00144_200-08-00154_200-38-0075-3_A1014764_A1053706_A1053707.jpg",
+      "brand": { "@type": "Brand", "name": "Variovac" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "А1014766" },
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "А1053706" },
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "А1053707" },
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "0152-0800-005" },
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "200-08-00144" }
+      ]
+    },
+    {
+      "@type": "Product",
+      "name": "Камень заточной 200х40х20 для Dick SM111",
+      "description": "Камень заточной для заточного станка Dick SM111, размер 200×40×20 мм.",
+      "sku": "982090029",
+      "mpn": "982090029",
+      "image": "https://your-site.ru/photos/Kamen_zatochnoi_200kh40kh20_Dick_SM111_982090029_9815001.jpg",
+      "brand": { "@type": "Brand", "name": "Dick" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "9815001" }
+      ]
+    },
+    {
+      "@type": "Product",
+      "name": "Диск доводочный 75х20 для Dick SM111",
+      "description": "Диск доводочный для заточного станка Dick SM111.",
+      "sku": "982090251",
+      "mpn": "982090251",
+      "image": "https://your-site.ru/photos/Disk_dovodochnii_75kh20_9kh6_Dick_SM111_982090251_980100.jpg",
+      "brand": { "@type": "Brand", "name": "Dick" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "9801002" }
+      ]
+    },
+    {
+      "@type": "Product",
+      "name": "Перфорирующий овальный нож для Variovac",
+      "description": "Перфорирующий овальный нож для упаковочной машины Variovac.",
+      "sku": "A1022266",
+      "mpn": "A1022266",
+      "image": "https://your-site.ru/photos/Perforiruyushchii_ovalnii_nozh_Variovac_A1022266_225_T2_0010_M5x10.jpg",
+      "brand": { "@type": "Brand", "name": "Variovac" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "225 T2 0010" }
+      ]
+    },
+    {
+      "@type": "Product",
+      "name": "Круг полировальный 150х20х26 для Dick SM111",
+      "description": "Круг полировальный для заточного станка Dick SM111.",
+      "sku": "982190320",
+      "mpn": "982190320",
+      "image": "https://your-site.ru/photos/Krug_polirovalnii_Dick_SM111_150kh20kh26_982190320_98160010.jpg",
+      "brand": { "@type": "Brand", "name": "Dick" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "98160010" }
+      ]
+    },
+    {
+      "@type": "Product",
+      "name": "Полировальная щетка 200х50х17 для Dick/Knecht",
+      "description": "Полировальная щетка для заточного станка Dick/Knecht.",
+      "sku": "94601180",
+      "mpn": "94601180",
+      "image": "https://your-site.ru/photos/Polirovalnaya_shchetka_Dick_Knecht_200kh50kh17_94601180_30002008150.jpg",
+      "brand": { "@type": "Brand", "name": "Dick" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "30002008150" }
+      ]
+    },
+    {
+      "@type": "Product",
+      "name": "Поперечный зубчатый нож 1x24x385 для Variovac",
+      "description": "Поперечный зубчатый нож для упаковочной машины Variovac.",
+      "sku": "5310321014",
+      "mpn": "5310321014",
+      "image": "https://your-site.ru/photos/Poperechnii_zubchatii_nozh_Variovac_1x24x385_5310321014_A1054362.jpg",
+      "brand": { "@type": "Brand", "name": "Variovac" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "A1054362" }
+      ]
+    },
+    {
+      "@type": "Product",
+      "name": "Нож 624, поперечная резка для Variovac",
+      "description": "Нож для поперечной резки (10 штук в упаковке) для упаковочной машины Variovac.",
+      "sku": "A1040710",
+      "mpn": "A1040710",
+      "image": "https://your-site.ru/photos/Nozh_624_poperechnaya_rezka_Variovac_A1040710_550A30022_550_A3_0022.jpg",
+      "brand": { "@type": "Brand", "name": "Variovac" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "550A30022" },
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "550 A3 0022" }
+      ]
+    },
+    {
+      "@type": "Product",
+      "name": "Нож отрезной зубчатый для SuperVac GK501",
+      "description": "Нож отрезной зубчатый для вакуумной упаковочной машины SuperVac GK501.",
+      "sku": "E0095200203",
+      "mpn": "E0095200203",
+      "image": "https://your-site.ru/photos/Nozh_otreznoi_zubchatii_SuperVac_GK501_1016_E0095200203.jpg",
+      "brand": { "@type": "Brand", "name": "SuperVac" },
+      "additionalProperty": []
+    },
+    {
+      "@type": "Product",
+      "name": "Нож круглый дисковый Ø90мм для Variovac",
+      "description": "Нож дисковый для продольной резки для упаковочной машины Variovac.",
+      "sku": "A1040643",
+      "mpn": "A1040643",
+      "image": "https://your-site.ru/photos/Nozh_kruglii_diskovii_Variovac_90_A1040643_550A10025_550_A1_0025.jpg",
+      "brand": { "@type": "Brand", "name": "Variovac" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "550A10025" },
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "550 A1 0025" }
+      ]
+    },
+    {
+      "@type": "Product",
+      "name": "Поперечный зубчатый нож 1x40x385 для Variovac",
+      "description": "Поперечный зубчатый нож для упаковочной машины Variovac.",
+      "sku": "A1071901",
+      "mpn": "A1071901",
+      "image": "https://your-site.ru/photos/Poperechnii_zubchatii_nozh_Variovac_1x40x385_1x24x385_A1071901.jpg",
+      "brand": { "@type": "Brand", "name": "Variovac" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "1x24x385" }
+      ]
+    },
+    {
+      "@type": "Product",
+      "name": "Направляющая дисковых ножей (средняя) для Variovac",
+      "description": "Направляющая дисковых ножей средняя для упаковочной машины Variovac.",
+      "sku": "А1053706",
+      "mpn": "А1053706",
+      "image": "https://your-site.ru/photos/Napravlyayushchaya_diskovikh_nozhei_srednyaya_Variovac_A1053706_A1015919_200-38-0075-3_0152-0800-012.jpg",
+      "brand": { "@type": "Brand", "name": "Variovac" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "А1015919" },
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "200-38-0075-3" },
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "0152-0800-012" }
+      ]
+    },
+    {
+      "@type": "Product",
+      "name": "Зажим пленки для Variovac",
+      "description": "Зажим пленки для упаковочной машины Variovac.",
+      "sku": "A1024243",
+      "mpn": "A1024243",
+      "image": "https://your-site.ru/photos/Zazhim_plenki_Variovac_260T20013_A1024201.jpg",
+      "brand": { "@type": "Brand", "name": "Variovac" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "A1024201" }
+      ]
+    },
+    {
+      "@type": "Product",
+      "name": "Воздушный фильтр С75 (фильтр-влагоотделитель)",
+      "description": "Воздушный фильтр-влагоотделитель С75.",
+      "sku": "TGA 8035",
+      "mpn": "TGA 8035",
+      "image": "https://your-site.ru/photos/Vozdushnii_filtr_S75_filtr-vlagootdelitel_TGA_8035.jpg",
+      "brand": { "@type": "Brand", "name": "" },
+      "additionalProperty": []
+    },
+    {
+      "@type": "Product",
+      "name": "Пароудерживающий шарик Ø50мм для SuperVac",
+      "description": "Пароудерживающий / изолирующий шарик для термоусадочных танков SuperVac.",
+      "sku": "",
+      "mpn": "",
+      "image": "https://your-site.ru/photos/Parouderzhivayushchii_sharik_izoliruyushchii_sharik_dlya_termousadochnikh_tankov_50.jpg",
+      "brand": { "@type": "Brand", "name": "SuperVac" },
+      "additionalProperty": []
+    }
+    {
+      "@type": "Product",
+      "name": "Уплотнение станции запечатывания Variovac 420×300 мм формат 3.1",
+      "description": "Уплотнение станции запечатывания для упаковочной машины Variovac, размер 420×300 мм, для формата 3.1.",
+      "sku": "",
+      "mpn": "",
+      "image": "https://your-site.ru/photos/uplotnenie-stancii-zapechatyvaniya-variovac-420x300-format-3-1.jpg",
+      "brand": { "@type": "Brand", "name": "Variovac" }
+    },
+    {
+      "@type": "Product",
+      "name": "Уплотнение станции запечатывания Variovac 420×300 мм формат 2.2",
+      "description": "Уплотнение станции запечатывания для упаковочной машины Variovac, размер 420×300 мм, для формата 2.2.",
+      "sku": "",
+      "mpn": "",
+      "image": "https://your-site.ru/photos/uplotnenie-stancii-zapechatyvaniya-variovac-420x300-format-2-2.jpg",
+      "brand": { "@type": "Brand", "name": "Variovac" }
+    },
+    {
+      "@type": "Product",
+      "name": "Универсальное уплотнение станции запечатывания Variovac 420×300 мм",
+      "description": "Универсальное запаечное силиконовое уплотнение станции запечатывания для форматов 2.1, 2.2, 3.2, 5.2.",
+      "sku": "A1022991",
+      "mpn": "A1022991",
+      "image": "https://your-site.ru/photos/uplotnenie-universalnoe-variovac-420x300.jpg",
+      "brand": { "@type": "Brand", "name": "Variovac" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "A1022992" },
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "A1023046" },
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "A1023054" },
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "235 T2 1540" },
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "235 T2 1545" },
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "235 T2 1795" }
+      ]
+    },
+    {
+      "@type": "Product",
+      "name": "Нож для шкуросъёмной машины Astor 434×20×1.0",
+      "description": "Нож для шкуросъёмной машины Astor, Германия.",
+      "sku": "",
+      "mpn": "",
+      "image": "https://your-site.ru/photos/nozh-dlya-shkurosyomnoj-mashiny-astor-434x20x1.jpg",
+      "brand": { "@type": "Brand", "name": "Astor" }
+    },
+    {
+      "@type": "Product",
+      "name": "Втулка скольжения Variovac аналог A1039701",
+      "description": "Втулка скольжения (подшипник скольжения) для упаковочной машины Variovac.",
+      "sku": "A1039701",
+      "mpn": "A1039701",
+      "image": "https://your-site.ru/photos/vtulka-skolzheniya-variovac-a1039701.jpg",
+      "brand": { "@type": "Brand", "name": "Variovac" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "507 A1 3038" }
+      ]
+    },
+    {
+      "@type": "Product",
+      "name": "Кнопка зелёная Vemag",
+      "description": "Кнопка управления зелёная для машины Vemag.",
+      "sku": "071099174",
+      "mpn": "071099174",
+      "image": "https://your-site.ru/photos/knopka-zelenaya-vemag-071099174.jpg",
+      "brand": { "@type": "Brand", "name": "Vemag" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "071099133" }
+      ]
+    },
+    {
+      "@type": "Product",
+      "name": "Кнопка зелёная «стрелка» Vemag",
+      "description": "Кнопка управления зелёная со стрелкой для машины Vemag.",
+      "sku": "071099121",
+      "mpn": "071099121",
+      "image": "https://your-site.ru/photos/knopka-zelenaya-strelka-vemag-071099121.jpg",
+      "brand": { "@type": "Brand", "name": "Vemag" }
+    },
+    {
+      "@type": "Product",
+      "name": "Контактный элемент Vemag",
+      "description": "Контактный элемент для кнопок машины Vemag.",
+      "sku": "071099127",
+      "mpn": "071099127",
+      "image": "https://your-site.ru/photos/kontaktnyy-element-vemag-071099127.jpg",
+      "brand": { "@type": "Brand", "name": "Vemag" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "071099128" },
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "071099130" }
+      ]
+    },
+    {
+      "@type": "Product",
+      "name": "Плоский ремень 240×18×1.8 для SM-110/111",
+      "description": "Плоский ремень для заточного станка Dick SM-110 / SM-111.",
+      "sku": "",
+      "mpn": "",
+      "image": "https://your-site.ru/photos/ploskij-remen-240x18x1-8-sm-110-111.jpg",
+      "brand": { "@type": "Brand", "name": "Dick" }
+    },
+    {
+      "@type": "Product",
+      "name": "Нож «звезда» 18×18×23.8 Variovac",
+      "description": "Нож звезда для упаковочных машин Variovac, Ulma, Multivac.",
+      "sku": "A1040739",
+      "mpn": "A1040739",
+      "image": "https://your-site.ru/photos/noz-zvezda-18x18x23-8-variovac-a1040739.jpg",
+      "brand": { "@type": "Brand", "name": "Variovac" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "1270230230402" },
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "550 А4 0028" }
+      ]
+    },
+    {
+      "@type": "Product",
+      "name": "Нож «полузвезда» 14×18×23.8 Variovac",
+      "description": "Нож полузвезда для упаковочных машин Variovac, Ulma, Multivac.",
+      "sku": "A1040737",
+      "mpn": "A1040737",
+      "image": "https://your-site.ru/photos/noz-poluzvezda-14x18x23-8-variovac-a1040737.jpg",
+      "brand": { "@type": "Brand", "name": "Variovac" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "1270230231607" },
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "550 А4 0027" }
+      ]
+    },
+    {
+      "@type": "Product",
+      "name": "Нож «евроотверстие» Variovac",
+      "description": "Нож для евроотверстия для упаковочных машин Variovac, Ulma, Multivac.",
+      "sku": "A1040766",
+      "mpn": "A1040766",
+      "image": "https://your-site.ru/photos/noz-evrootverstie-variovac-a1040766.jpg",
+      "brand": { "@type": "Brand", "name": "Variovac" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Дополнительный каталожный номер", "value": "550 A4 0410" }
+      ]
+    },
+    {
+      "@type": "Product",
+      "name": "Рассекатель «ёлочка» в цевку D36 / D48 мм",
+      "description": "Рассекатель елочка для цевки диаметром 36 мм и 48 мм.",
+      "sku": "",
+      "mpn": "",
+      "image": "https://your-site.ru/photos/rassekatel-elochka-d36-d48mm.jpg",
+      "brand": { "@type": "Brand", "name": "" }
+    }
+  ]
+}
 </script>
 </body>
 </html>
